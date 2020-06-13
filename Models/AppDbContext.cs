@@ -14,6 +14,8 @@ namespace DeliveryApp.Models
         }
 
         public DbSet<Pedido> Pedidos { get; set; }
-        public DbSet<Prato> Pratos { get; set; }
+        public DbSet<Carne> Carnes { get; set; }
+        public DbSet<Guarnicao> Guarnicoes { get; set; }
+        public DbSet<Salada> Saladas { get; set; }
     }
 }

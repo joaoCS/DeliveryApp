@@ -5,11 +5,10 @@ using System.Threading.Tasks;
 
 namespace DeliveryApp.Models
 {
-    public class Carne
+    public class Salada
     {
         public int Id { get; set; }
         public string Nome { get; set; }
-
         public int PedidoId { get; set; }
         public Pedido Pedido { get; set; }
     }

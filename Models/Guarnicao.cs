@@ -5,13 +5,11 @@ using System.Threading.Tasks;
 
 namespace DeliveryApp.Models
 {
-    public class Prato
+    public class Guarnicao
     {
         public int Id { get; set; }
         public string Nome { get; set; }
-        public string Descricao { get; set; }
-        public float Preco { get; set; }
-
-
+        public int PedidoId { get; set; }
+        public Pedido Pedido { get; set; }
     }
 }
