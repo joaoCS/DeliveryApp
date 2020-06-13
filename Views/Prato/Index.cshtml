@@ -1,0 +1,39 @@
+﻿@{ 
+    ViewData["title"] = "Pratos";
+}
+
+<div>
+
+    <h2>Pratos</h2>
+
+    <div>
+        <h3>QUENTINHAS</h3>
+        <a class="text-decoration-none" asp-controller="Prato" asp-action="QuentinhaMedia">
+            <b>Quentinha Média</b>
+            1 OPÇÃO DE CARNE
+
+            <span class="text-black-50">R$ 7,00</span>
+        </a>
+
+        <hr />
+
+        <a class="text-decoration-none" asp-controller="Prato" asp-action="QuentinhaGrande">
+            <b>Quentinha Grande</b>
+            2 OPÇÕES DE CARNE (ACOMPANHA UM SUCO)
+
+            <span class="text-black-50">R$ 10,00</span>
+        </a>
+
+        <hr />
+        <hr />
+
+        <h3>COMBOS</h3>
+        <a class="text-decoration-none" asp-controller="Prato" asp-action="ComboFrangoAssado">
+            <b>Combo frango assado + baião de 2</b>
+            
+            <span class="text-black-50">R$ 14,99</span>
+        </a>
+
+    </div>
+
+</div>
