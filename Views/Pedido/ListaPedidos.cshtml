@@ -1,0 +1,23 @@
+﻿@model IEnumerable<DeliveryApp.Models.Pedido>
+@{
+    ViewData["Title"] = "Lista de Pedidos";
+}
+
+<h1>Lista de Pedidos</h1>
+
+<div class="card">
+    @foreach (var pedido in Model)
+    {
+        <div class="card-header">
+            <b>@pedido.Nome</b>
+        </div>
+        <div class="card-body">
+            <span class="text-info">Quantidade: @pedido.Quantidade</span><br />
+            <span>Preço: R$ @pedido.Preco</span><br />
+            <span>Troco: R$ @pedido.Troco</span><br />
+            <a>Detalhes...</a>
+        </div>
+
+    }
+</div>
+

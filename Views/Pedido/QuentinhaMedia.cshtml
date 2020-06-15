@@ -1,0 +1,63 @@
+﻿@model DeliveryApp.Models.Pedido
+
+@{
+    ViewData["Title"] = "Quentinha Média";
+}
+
+<h1>Quentinha Média</h1>
+
+1 Opção de Carne
+
+<b>R$ 7,00</b>
+
+<form class="card" asp-controller="Pedido" asp-action="QuentinhaMedia" method="post">
+    <label class="card-header"><b>Carnes</b> (escolha 1 opção)</label><br />
+    <div class="card-body">
+        <input type="radio" name="carne" value="Frango Assado" /> Frango assado <br />
+        <input type="radio" name="carne" value="Bisteca de porco" /> Bisteca de porco<br />
+        <input type="radio" name="carne" value="Linguiça" /> Linguiça<br />
+        <input type="radio" name="carne" value="Frango ao molho" /> Frango ao molho<br />
+        <input type="radio" name="carne" value="Bife ao molho" /> Bife ao molho<br />
+        <input type="radio" name="carne" value="Filé de frango na chapa" /> Filé de frango na chapa<br />
+    </div>
+    <br />
+    <label class="card-header"><b>Guarnições</b></label><br />
+    <div class="card-body">
+        <input type="checkbox" name="guarnicao" value="Arroz" />  Arroz<br />
+        <input type="checkbox" name="guarnicao" " value="Macarrao" /> Macarrão<br />
+        <input type="checkbox" name="guarnicao" value="Feijao" /> Feijão<br />
+        <input type="checkbox" name="guarnicao" value="Baiao" /> Baião<br />
+        <input type="checkbox" name="guarnicao" value="Farofa" /> Farofa<br />
+    </div>
+    <br />
+
+    <label class="card-header"><b>Salada</b></label><br />
+    <div class="card-body">
+        <input type="checkbox" name="salada" value="Alface" /> Alface<br />
+        <input type="checkbox" name="salada" value="Tomate/Cebola" /> Tomate / Cebola<br />
+        <input type="checkbox" name="salada" value="Batata c/ Maionese" /> Batata c/ Maionese <br />
+    </div>
+
+
+    <input type="hidden" name="nome" value="Quentinha Media" />
+
+    <label for="troco" class="card-header">Troco</label>
+    <input type="number" name="troco" class="form-control m-4 w-25" />
+
+    <label for="quantidade" class="card-header">Quantitade</label>
+    <input type="number" name="quantidade" class="form-control m-4 w-25" />
+
+    <label for="estado" class="card-header">Estado:</label>
+    <input type="text" name="estado" class="form-control m-4 w-50" />
+
+    <label for="cidade" class="card-header">Cidade:</label>
+    <input type="text" name="cidade" class="form-control m-4 w-50" />
+
+    <label for="endereco" class="card-header">Endereço:</label>
+    <input type="text" name="endereco" class="form-control m-4 w-75" />
+
+    <label for="numero" class="card-header">Número:</label>
+    <input type="number" name="numero" class="form-control w-25 m-4" />
+
+    <input type="submit" value="Fazer pedido" class="btn btn-primary m-4 w-25" />
+</form>

@@ -65,7 +65,6 @@ C:\Users\joaoa\source\repos\DeliveryApp\DeliveryApp\obj\Debug\netcoreapp3.1\Deli
 C:\Users\joaoa\source\repos\DeliveryApp\DeliveryApp\obj\Debug\netcoreapp3.1\DeliveryApp.dll
 C:\Users\joaoa\source\repos\DeliveryApp\DeliveryApp\obj\Debug\netcoreapp3.1\DeliveryApp.pdb
 C:\Users\joaoa\source\repos\DeliveryApp\DeliveryApp\obj\Debug\netcoreapp3.1\DeliveryApp.genruntimeconfig.cache
-C:\Users\joaoa\source\repos\DeliveryApp\DeliveryApp\obj\Debug\netcoreapp3.1\Razor\Views\Prato\Index.cshtml.g.cs
 C:\Users\joaoa\source\repos\DeliveryApp\DeliveryApp\obj\Debug\netcoreapp3.1\DeliveryApp.csproj.CoreCompileInputs.cache
 C:\Users\joaoa\source\repos\DeliveryApp\DeliveryApp\obj\Debug\netcoreapp3.1\DeliveryApp.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\joaoa\source\repos\DeliveryApp\DeliveryApp\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Razor.Language.dll
@@ -141,5 +140,7 @@ C:\Users\joaoa\source\repos\DeliveryApp\DeliveryApp\bin\Debug\netcoreapp3.1\ru\M
 C:\Users\joaoa\source\repos\DeliveryApp\DeliveryApp\bin\Debug\netcoreapp3.1\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
 C:\Users\joaoa\source\repos\DeliveryApp\DeliveryApp\bin\Debug\netcoreapp3.1\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
 C:\Users\joaoa\source\repos\DeliveryApp\DeliveryApp\bin\Debug\netcoreapp3.1\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
-C:\Users\joaoa\source\repos\DeliveryApp\DeliveryApp\obj\Debug\netcoreapp3.1\Razor\Views\Prato\QuentinhaMedia.cshtml.g.cs
 C:\Users\joaoa\source\repos\DeliveryApp\DeliveryApp\obj\Debug\netcoreapp3.1\DeliveryApp.csprojAssemblyReference.cache
+C:\Users\joaoa\source\repos\DeliveryApp\DeliveryApp\obj\Debug\netcoreapp3.1\Razor\Views\Pedido\Index.cshtml.g.cs
+C:\Users\joaoa\source\repos\DeliveryApp\DeliveryApp\obj\Debug\netcoreapp3.1\Razor\Views\Pedido\QuentinhaMedia.cshtml.g.cs
+C:\Users\joaoa\source\repos\DeliveryApp\DeliveryApp\obj\Debug\netcoreapp3.1\Razor\Views\Pedido\ListaPedidos.cshtml.g.cs
