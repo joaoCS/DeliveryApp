@@ -24,7 +24,7 @@
     <label class="card-header"><b>Guarnições</b></label><br />
     <div class="card-body">
         <input type="checkbox" name="guarnicao" value="Arroz" />  Arroz<br />
-        <input type="checkbox" name="guarnicao" " value="Macarrao" /> Macarrão<br />
+        <input type="checkbox" name="guarnicao" value="Macarrao" /> Macarrão<br />
         <input type="checkbox" name="guarnicao" value="Feijao" /> Feijão<br />
         <input type="checkbox" name="guarnicao" value="Baiao" /> Baião<br />
         <input type="checkbox" name="guarnicao" value="Farofa" /> Farofa<br />
@@ -39,25 +39,25 @@
     </div>
 
 
-    <input type="hidden" name="nome" value="Quentinha Media" />
+    <input type="hidden" asp-for="@Model.Nome" value="Quentinha Media" />
 
     <label for="troco" class="card-header">Troco</label>
-    <input type="number" name="troco" class="form-control m-4 w-25" />
+    <input type="number" asp-for="@Model.Troco" class="form-control m-4 w-25" />
 
     <label for="quantidade" class="card-header">Quantitade</label>
-    <input type="number" name="quantidade" class="form-control m-4 w-25" />
+    <input type="number" asp-for="@Model.Quantidade" class="form-control m-4 w-25" />
 
     <label for="estado" class="card-header">Estado:</label>
-    <input type="text" name="estado" class="form-control m-4 w-50" />
+    <input type="text" asp-for="@Model.Estado" class="form-control m-4 w-50" />
 
     <label for="cidade" class="card-header">Cidade:</label>
-    <input type="text" name="cidade" class="form-control m-4 w-50" />
+    <input type="text" asp-for="@Model.Cidade" class="form-control m-4 w-50" />
 
     <label for="endereco" class="card-header">Endereço:</label>
-    <input type="text" name="endereco" class="form-control m-4 w-75" />
+    <input type="text" asp-for="@Model.Endereco" class="form-control m-4 w-75" />
 
     <label for="numero" class="card-header">Número:</label>
-    <input type="number" name="numero" class="form-control w-25 m-4" />
+    <input type="number" asp-for="@Model.Numero" class="form-control w-25 m-4" />
 
     <input type="submit" value="Fazer pedido" class="btn btn-primary m-4 w-25" />
 </form>

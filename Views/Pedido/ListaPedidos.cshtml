@@ -5,19 +5,27 @@
 
 <h1>Lista de Pedidos</h1>
 
-<div class="card">
-    @foreach (var pedido in Model)
-    {
-        <div class="card-header">
-            <b>@pedido.Nome</b>
-        </div>
-        <div class="card-body">
-            <span class="text-info">Quantidade: @pedido.Quantidade</span><br />
-            <span>Preço: R$ @pedido.Preco</span><br />
-            <span>Troco: R$ @pedido.Troco</span><br />
-            <a asp-action="Detalhes" asp-route-id="@pedido.Id">Detalhes...</a>
-        </div>
-
-    }
-</div>
-
+@if (Model.Where(p => p.Atendido == false).Count() == 0)
+{
+    <h3 class="text-info">Nenhum pedido!</h3>
+}
+else 
+{ 
+    <div class="card">
+        @foreach (var pedido in Model)
+        {
+            @if (!pedido.Atendido)
+            {
+                <div class="card-header">
+                    <b>@pedido.Nome</b>
+                </div>
+                <div class="card-body">
+                    <span class="text-info">Quantidade: @pedido.Quantidade</span><br />
+                    <span>Preço: R$ @pedido.Preco</span><br />
+                    <span>Troco: R$ @pedido.Troco</span><br />
+                    <a asp-action="Detalhes" asp-route-id="@pedido.Id">Detalhes...</a>
+                </div>
+            }
+        }
+    </div>
+}
