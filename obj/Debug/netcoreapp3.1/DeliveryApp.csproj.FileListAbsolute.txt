@@ -145,3 +145,4 @@ C:\Users\joaoa\source\repos\DeliveryApp\DeliveryApp\obj\Debug\netcoreapp3.1\Razo
 C:\Users\joaoa\source\repos\DeliveryApp\DeliveryApp\obj\Debug\netcoreapp3.1\Razor\Views\Pedido\QuentinhaMedia.cshtml.g.cs
 C:\Users\joaoa\source\repos\DeliveryApp\DeliveryApp\obj\Debug\netcoreapp3.1\Razor\Views\Pedido\ListaPedidos.cshtml.g.cs
 C:\Users\joaoa\source\repos\DeliveryApp\DeliveryApp\obj\Debug\netcoreapp3.1\Razor\Views\Pedido\Detalhes.cshtml.g.cs
+C:\Users\joaoa\source\repos\DeliveryApp\DeliveryApp\obj\Debug\netcoreapp3.1\Razor\Views\Pedido\QuentinhaGrande.cshtml.g.cs

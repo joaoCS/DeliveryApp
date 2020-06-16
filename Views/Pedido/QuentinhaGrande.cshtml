@@ -1,24 +1,25 @@
 ﻿@model DeliveryApp.Models.Pedido
 
 @{
-    ViewData["Title"] = "Quentinha Média";
+    ViewData["Title"] = "Quentinha Grande";
 }
 
-<h1>Quentinha Média</h1>
+<h1>Quentinha Grande</h1>
 
-1 Opção de Carne
+Duas opções de carne
 
-<b>R$ 7,00</b>
+<b>R$ 10,00</b>
 
 <form class="card" asp-controller="Pedido" asp-action="FazerPedido" method="post">
-    <label class="card-header"><b>Carnes</b> (escolha 1 opção)</label><br />
+    <label class="card-header"><b>Carnes</b> (escolha até 2 opções)</label><br />
     <div class="card-body">
-        <input type="radio" name="carne" value="Frango Assado" /> Frango assado <br />
-        <input type="radio" name="carne" value="Bisteca de porco" /> Bisteca de porco<br />
-        <input type="radio" name="carne" value="Linguiça" /> Linguiça<br />
-        <input type="radio" name="carne" value="Frango ao molho" /> Frango ao molho<br />
-        <input type="radio" name="carne" value="Bife ao molho" /> Bife ao molho<br />
-        <input type="radio" name="carne" value="Filé de frango na chapa" /> Filé de frango na chapa<br />
+        <input type="checkbox" name="carne" value="Frango Assado" /> Frango assado <br />
+        <input type="checkbox" name="carne" value="Bisteca de porco" /> Bisteca de porco<br />
+        <input type="checkbox" name="carne" value="Linguiça" /> Linguiça<br />
+        <input type="checkbox" name="carne" value="Frango ao molho" /> Frango ao molho<br />
+        <input type="checkbox" name="carne" value="Bife ao molho" /> Bife ao molho<br />
+        <input type="checkbox" name="carne" value="Strogonoff de gado" /> Strogonoff de gado<br />
+        <input type="checkbox" name="carne" value="Filé de peixe ao molho branco" /> Filé de peixe ao molho branco<br />
     </div>
     <br />
     <label class="card-header"><b>Guarnições</b></label><br />
@@ -39,7 +40,7 @@
     </div>
 
 
-    <input type="hidden" asp-for="@Model.Nome" value="Quentinha Media" />
+    <input type="hidden" asp-for="@Model.Nome" value="Quentinha Grande" />
 
     <label for="troco" class="card-header">Troco</label>
     <input type="number" asp-for="@Model.Troco" class="form-control m-4 w-25" />

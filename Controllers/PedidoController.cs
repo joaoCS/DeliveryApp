@@ -28,11 +28,18 @@ namespace DeliveryApp.Controllers
             return View();
         }
 
-        [HttpPost]
-        public IActionResult QuentinhaMedia(List<string> carne, List<string> guarnicao, List<string> salada, Pedido pedido)
+        public IActionResult QuentinhaGrande()
         {
+            return View();
+        }
 
-            pedido.Preco = 7 * pedido.Quantidade;
+        [HttpPost]
+        public IActionResult FazerPedido(List<string> carne, List<string> guarnicao, List<string> salada, Pedido pedido)
+        {
+            if(pedido.Nome == "Quentinha Media")
+                pedido.Preco = 7 * pedido.Quantidade;
+            else if (pedido.Nome == "Quentinha Grande")
+                pedido.Preco = 10 * pedido.Quantidade;
 
             _context.Pedidos.Add(pedido);
 

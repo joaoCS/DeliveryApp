@@ -5,12 +5,17 @@
 
 <h1>Detalhes do pedido</h1>
 
+<a asp-controller="Pedido" asp-action="ListaPedidos">Lista de Pedidos</a>
+
 <div class="card">
     <div class="card-header">
         <b class="text-left">@Model.Nome</b>
-        <div class="text-right" style="margin-top: -20px;">
-            <a class="btn btn-primary" asp-action="MarcarAtendido" asp-route-id="@Model.Id">Marcar como atendido</a>
-        </div>
+        @if (!Model.Atendido)
+        {
+            <div class="text-right" style="margin-top: -20px;">
+                <a class="btn btn-primary" asp-action="MarcarAtendido" asp-route-id="@Model.Id">Marcar como atendido</a>
+            </div>
+        }
     </div>
     <div class="card-body">
         <span class="text-info">Quantidade: @Model.Quantidade</span><br />
