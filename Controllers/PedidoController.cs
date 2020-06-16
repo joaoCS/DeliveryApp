@@ -84,9 +84,37 @@ namespace DeliveryApp.Controllers
         {
             List<Pedido> pedidos = _context.Pedidos.ToList();
 
-
             return View(pedidos);
         }
 
+        public IActionResult Detalhes(int id)
+        {
+            Pedido p = _context.Pedidos.Find(id);
+
+
+            List<Carne> carnes = _context.Carnes.Where(c => c.PedidoId == p.Id).ToList();
+
+            List<Guarnicao> guarnicoes = _context.Guarnicoes.Where(g => g.PedidoId == p.Id).ToList();
+
+            List<Salada> saladas = _context.Saladas.Where(s => s.PedidoId == p.Id).ToList();
+
+            p.Carne = carnes;
+            p.Guarnicao = guarnicoes;
+            p.Salada = saladas;
+
+            return View(p);
+        }
+
+        public IActionResult MarcarAtendido(int id)
+        {
+            Pedido pedido = _context.Pedidos.Find(id);
+
+            pedido.Atendido = true;
+
+            _context.Update(pedido);
+            _context.SaveChanges();
+
+            return RedirectToAction("Detalhes", "Pedido", new { id = id });
+        }
     }
 }

@@ -1,0 +1,57 @@
+﻿@model DeliveryApp.Models.Pedido
+@{
+    ViewData["Title"] = "Detalhes do Pedido";
+}
+
+<h1>Detalhes do pedido</h1>
+
+<div class="card">
+    <div class="card-header">
+        <b class="text-left">@Model.Nome</b>
+        <div class="text-right" style="margin-top: -20px;">
+            <a class="btn btn-primary" asp-action="MarcarAtendido" asp-route-id="@Model.Id">Marcar como atendido</a>
+        </div>
+    </div>
+    <div class="card-body">
+        <span class="text-info">Quantidade: @Model.Quantidade</span><br />
+        <span>Preço: R$ @Model.Preco</span><br />
+        <span>Troco: R$ @Model.Troco</span><br />
+        
+        <div class="card-body">
+            <b>Carnes</b>
+            @foreach (var c in Model.Carne)
+            {
+                <p>@c.Nome</p>
+            }
+
+            <b>Guarnições</b>
+            @foreach (var g in Model.Guarnicao)
+            {
+                <p>@g.Nome</p>
+            }
+
+            <b>Salada</b>
+            @foreach (var s in Model.Salada)
+            {
+                <p>@s.Nome</p>
+            }
+        </div>
+
+        <div class="card-body">
+            <h4>Localicação do cliente</h4>
+
+            <label><b>ESTADO:</b></label>
+            <p>@Model.Estado</p>
+
+            <label><b>CIDADE:</b></label>
+            <p>@Model.Cidade</p>
+
+            <label><b>ENDEREÇO:</b></label>
+            <p>@Model.Endereco</p>
+
+            <label><b>NÚMERO:</b></label>
+            <p>@Model.Numero</p>
+        </div>
+
+    </div>
+</div>
